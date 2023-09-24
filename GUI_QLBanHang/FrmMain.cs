@@ -23,12 +23,31 @@ namespace GUI_QLBanHang
 
         }
 
+        // Btn Thoát
         private void btnthoat_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có chắc chắn thoát ?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {
                 this.Close();
+            }
+        }
+
+        // Btn Đăng nhập
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            var dn = new FrmDangNhap();
+            if (!CheckExistForm("FrmDangNhap"))
+            {
+                dn.TopLevel = false;
+                dn.MdiParent = this;
+                panel18.Controls.Add(dn);
+                dn.Location = new Point(panel18.Width / 2 - dn.Width / 2, panel18.Height / 2 - dn.Height / 2);
+                dn.Show();
+            }
+            else
+            {
+                ActiveChildForm("FrmDangNhap");
             }
         }
         #region Sub Method
@@ -44,7 +63,7 @@ namespace GUI_QLBanHang
             if (menudanhmuc_Expand == false)
             {
                 menuDanhMuc.Height += 10;
-                if (menuDanhMuc.Height >= 136)
+                if (menuDanhMuc.Height >= 134)
                 {
                     Transition_DanhMuc.Stop();
                     menudanhmuc_Expand = true;
@@ -71,7 +90,7 @@ namespace GUI_QLBanHang
             if (menuthongke_Expand == false)
             {
                 menuThongKe.Height += 10;
-                if (menuThongKe.Height >= 102)
+                if (menuThongKe.Height >= 101)
                 {
                     Transition_ThongKe.Stop();
                     menuthongke_Expand = true;
@@ -98,7 +117,7 @@ namespace GUI_QLBanHang
             if (menuhuongdan_Expand == false)
             {
                 menuHuongDan.Height += 10;
-                if (menuHuongDan.Height >= 102)
+                if (menuHuongDan.Height >= 101)
                 {
                     Transition_HuongDan.Stop();
                     menuhuongdan_Expand = true;
@@ -125,7 +144,7 @@ namespace GUI_QLBanHang
             if (menuhethong_Expand == false)
             {
                 menuHeThong.Height += 10;
-                if (menuHeThong.Height >= 170)
+                if (menuHeThong.Height >= 169)
                 {
                     Transition_HeThong.Stop();
                     menuhethong_Expand = true;
@@ -146,23 +165,7 @@ namespace GUI_QLBanHang
             Transition_HeThong.Start();
         }
         #endregion
-        #endregion
-        private void btnDangNhap_Click(object sender, EventArgs e)
-        {
-            var dn = new FrmDangNhap();
-            if (!CheckExistForm("FrmDangNhap"))
-            {
-                dn.TopLevel = false;
-                dn.MdiParent = this;
-                panel18.Controls.Add(dn);
-                dn.Location = new Point(panel18.Width / 2 - dn.Width / 2, panel18.Height / 2 - dn.Height / 2);
-                dn.Show();
-            }
-            else
-            {
-                ActiveChildForm("FrmDangNhap");
-            }
-        }
+        // Check isOpen form
         private bool CheckExistForm(string name)
         {
             FormCollection fc = Application.OpenForms;
@@ -190,5 +193,6 @@ namespace GUI_QLBanHang
                 }
             }
         }
+        #endregion
     }
 }

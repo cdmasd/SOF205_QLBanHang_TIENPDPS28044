@@ -132,6 +132,7 @@
             // btnDanhMuc
             // 
             btnDanhMuc.BackColor = Color.DarkSlateBlue;
+            btnDanhMuc.Cursor = Cursors.Hand;
             btnDanhMuc.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnDanhMuc.ForeColor = SystemColors.Control;
             btnDanhMuc.Location = new Point(-22, -12);
@@ -189,7 +190,8 @@
             // 
             // btnSanPham
             // 
-            btnSanPham.BackColor = Color.FromArgb(82, 69, 158);
+            btnSanPham.BackColor = Color.FromArgb(85, 73, 163);
+            btnSanPham.Cursor = Cursors.Hand;
             btnSanPham.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnSanPham.ForeColor = SystemColors.Control;
             btnSanPham.Location = new Point(-10, -11);
@@ -211,7 +213,8 @@
             // 
             // btnNhanVien
             // 
-            btnNhanVien.BackColor = Color.FromArgb(82, 69, 158);
+            btnNhanVien.BackColor = Color.FromArgb(85, 73, 163);
+            btnNhanVien.Cursor = Cursors.Hand;
             btnNhanVien.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnNhanVien.ForeColor = SystemColors.Control;
             btnNhanVien.Location = new Point(-10, -11);
@@ -233,7 +236,8 @@
             // 
             // btnKhachHang
             // 
-            btnKhachHang.BackColor = Color.FromArgb(82, 69, 158);
+            btnKhachHang.BackColor = Color.FromArgb(85, 73, 163);
+            btnKhachHang.Cursor = Cursors.Hand;
             btnKhachHang.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnKhachHang.ForeColor = SystemColors.Control;
             btnKhachHang.Location = new Point(-10, -11);
@@ -268,6 +272,7 @@
             // btnThongKe
             // 
             btnThongKe.BackColor = Color.DarkSlateBlue;
+            btnThongKe.Cursor = Cursors.Hand;
             btnThongKe.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnThongKe.ForeColor = SystemColors.Control;
             btnThongKe.Location = new Point(-22, -12);
@@ -290,7 +295,8 @@
             // 
             // btnSPNhapKho
             // 
-            btnSPNhapKho.BackColor = Color.FromArgb(82, 69, 158);
+            btnSPNhapKho.BackColor = Color.FromArgb(85, 73, 163);
+            btnSPNhapKho.Cursor = Cursors.Hand;
             btnSPNhapKho.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnSPNhapKho.ForeColor = SystemColors.Control;
             btnSPNhapKho.Location = new Point(-10, -11);
@@ -312,7 +318,8 @@
             // 
             // btnSPTonKho
             // 
-            btnSPTonKho.BackColor = Color.FromArgb(82, 69, 158);
+            btnSPTonKho.BackColor = Color.FromArgb(85, 73, 163);
+            btnSPTonKho.Cursor = Cursors.Hand;
             btnSPTonKho.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnSPTonKho.ForeColor = SystemColors.Control;
             btnSPTonKho.Location = new Point(-10, -11);
@@ -347,6 +354,7 @@
             // btnHuongDan
             // 
             btnHuongDan.BackColor = Color.DarkSlateBlue;
+            btnHuongDan.Cursor = Cursors.Hand;
             btnHuongDan.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnHuongDan.ForeColor = SystemColors.Control;
             btnHuongDan.Location = new Point(-22, -12);
@@ -369,7 +377,8 @@
             // 
             // btnHdsd
             // 
-            btnHdsd.BackColor = Color.FromArgb(82, 69, 158);
+            btnHdsd.BackColor = Color.FromArgb(85, 73, 163);
+            btnHdsd.Cursor = Cursors.Hand;
             btnHdsd.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnHdsd.ForeColor = SystemColors.Control;
             btnHdsd.Location = new Point(-10, -11);
@@ -391,7 +400,8 @@
             // 
             // btnGTSP
             // 
-            btnGTSP.BackColor = Color.FromArgb(82, 69, 158);
+            btnGTSP.BackColor = Color.FromArgb(85, 73, 163);
+            btnGTSP.Cursor = Cursors.Hand;
             btnGTSP.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnGTSP.ForeColor = SystemColors.Control;
             btnGTSP.Location = new Point(-10, -11);
@@ -428,6 +438,7 @@
             // btnHeThong
             // 
             btnHeThong.BackColor = Color.DarkSlateBlue;
+            btnHeThong.Cursor = Cursors.Hand;
             btnHeThong.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnHeThong.ForeColor = SystemColors.Control;
             btnHeThong.Location = new Point(-22, -12);
@@ -450,7 +461,8 @@
             // 
             // btnDangNhap
             // 
-            btnDangNhap.BackColor = Color.FromArgb(82, 69, 158);
+            btnDangNhap.BackColor = Color.FromArgb(85, 73, 163);
+            btnDangNhap.Cursor = Cursors.Hand;
             btnDangNhap.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnDangNhap.ForeColor = SystemColors.Control;
             btnDangNhap.Location = new Point(-10, -11);
@@ -473,7 +485,8 @@
             // 
             // btnDangXuat
             // 
-            btnDangXuat.BackColor = Color.FromArgb(82, 69, 158);
+            btnDangXuat.BackColor = Color.FromArgb(85, 73, 163);
+            btnDangXuat.Cursor = Cursors.Hand;
             btnDangXuat.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnDangXuat.ForeColor = SystemColors.Control;
             btnDangXuat.Location = new Point(-10, -11);
@@ -495,7 +508,8 @@
             // 
             // btnHoSoNV
             // 
-            btnHoSoNV.BackColor = Color.FromArgb(82, 69, 158);
+            btnHoSoNV.BackColor = Color.FromArgb(85, 73, 163);
+            btnHoSoNV.Cursor = Cursors.Hand;
             btnHoSoNV.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnHoSoNV.ForeColor = SystemColors.Control;
             btnHoSoNV.Location = new Point(-10, -11);
@@ -517,7 +531,8 @@
             // 
             // btnThoat2
             // 
-            btnThoat2.BackColor = Color.FromArgb(82, 69, 158);
+            btnThoat2.BackColor = Color.FromArgb(85, 73, 163);
+            btnThoat2.Cursor = Cursors.Hand;
             btnThoat2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnThoat2.ForeColor = SystemColors.Control;
             btnThoat2.Location = new Point(-10, -11);
@@ -608,7 +623,6 @@
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel2;
         private Panel panel4;
-        private Panel panel5;
         private Panel panel6;
         private Button btnSanPham;
         private Panel panel9;
@@ -618,7 +632,6 @@
         private FlowLayoutPanel menuDanhMuc;
         private System.Windows.Forms.Timer Transition_DanhMuc;
         private Button btnHoSoNV;
-        private Button button2;
         private Panel panel11;
         private Button btnSPTonKho;
         private Panel panel7;
