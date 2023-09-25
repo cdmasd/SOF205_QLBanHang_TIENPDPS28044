@@ -38,3 +38,4 @@ C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\bin\Debug\net6.0-w
 C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\bin\Debug\net6.0-windows\BUS_BanHang.pdb
 C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\bin\Debug\net6.0-windows\PasswordGenerator.dll
 C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\bin\Debug\net6.0-windows\GUI_QLBanHang.dll.config
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\obj\Debug\net6.0-windows\GUI_QLBanHang.FrmMainn.resources

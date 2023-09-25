@@ -9,6 +9,7 @@ using PasswordGenerator;
 using System.Security.Cryptography;
 using System.Net.Mail;
 using System.Net;
+using System.Data;
 
 namespace BUS_BanHang
 {
@@ -26,6 +27,10 @@ namespace BUS_BanHang
         public bool TaoMatKhau(string email, string newpass)
         {
             return dalNhanVien.TaoMatKhau(email, encrytion(newpass));
+        }
+        public DataTable VaiTroNhanVien(string email)
+        {
+            return dalNhanVien.VaiTroNhanVien(email);
         }
 
         // Mã hoá mật khẩu

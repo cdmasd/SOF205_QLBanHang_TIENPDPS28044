@@ -70,5 +70,21 @@ namespace DAL_QLBanHang
             finally { _conn.Close(); }
             return false;
         }
+        public DataTable VaiTroNhanVien(string email)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "LayVaiTroNV";
+                cmd.Parameters.AddWithValue("@email", email);
+                DataTable dt = new DataTable();
+                dt.Load(cmd.ExecuteReader());
+                return dt;
+            }
+            finally { _conn.Close(); }
+        }
     }
 }

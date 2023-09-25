@@ -1,10 +1,12 @@
 ﻿using BUS_BanHang;
+using System.Data;
 
 namespace GUI_QLBanHang
 {
     public partial class FrmDangNhap : Form
     {
         BUS_NhanVien bus_nhanvien = new BUS_NhanVien();
+        public string vaitro { get; set; }
         public FrmDangNhap()
         {
             InitializeComponent();
@@ -32,6 +34,12 @@ namespace GUI_QLBanHang
             if (bus_nhanvien.NhanVienDangNhap(txtemail.Text, bus_nhanvien.encrytion(txtmatkhau.Text)))
             {
                 MessageBox.Show("Đăng nhập thành công", "Thông báo");
+                // Gửi kết quả đăng nhập cho frmMain
+                FrmMainn.mail = txtemail.Text;
+                FrmMainn.session = 1;
+                DataTable dt = bus_nhanvien.VaiTroNhanVien(txtemail.Text);
+                vaitro = dt.Rows[0][0].ToString();
+                // Lưu email và mật khẩu khi nhấp checkbox
                 Properties.Settings.Default.isSave = chkghinhotk.Checked;
                 if (chkghinhotk.Checked)
                 {
@@ -84,6 +92,5 @@ namespace GUI_QLBanHang
                 btndangnhap.Focus();
             }
         }
-
     }
 }
