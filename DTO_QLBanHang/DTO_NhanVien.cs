@@ -53,7 +53,15 @@ namespace DTO_QLBanHang
             this.vaitro = vaitro;
             this.tinhtrang = tinhtrang;
         }
-
+        public DTO_NhanVien(string email, string tennv, string diachi, int vaitro, int tinhtrang,string matkhau)
+        {
+            this.email = email;
+            this.tennv = tennv;
+            this.diachi = diachi;
+            this.vaitro = vaitro;
+            this.tinhtrang = tinhtrang;
+            this.matkhau = matkhau;
+        }
         public DTO_NhanVien()
         {
 

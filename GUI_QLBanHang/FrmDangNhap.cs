@@ -71,7 +71,7 @@ namespace GUI_QLBanHang
             {
                 string newpass = bus_nhanvien.RandomString();
                 bus_nhanvien.TaoMatKhau(txtemail.Text, newpass);
-                MessageBox.Show(bus_nhanvien.SendMail(txtemail.Text, newpass), "Thông báo");
+                MessageBox.Show(bus_nhanvien.SendMail(txtemail.Text, newpass,"Recovery Password"), "Thông báo");
             }
             else
             {

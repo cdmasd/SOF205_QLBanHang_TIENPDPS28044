@@ -70,7 +70,7 @@
             btndong.ForeColor = SystemColors.Control;
             btndong.Image = Properties.Resources.off;
             btndong.ImageAlign = ContentAlignment.MiddleLeft;
-            btndong.Location = new Point(680, 494);
+            btndong.Location = new Point(685, 483);
             btndong.Name = "btndong";
             btndong.Size = new Size(73, 32);
             btndong.TabIndex = 45;
@@ -87,7 +87,7 @@
             btndanhsach.ForeColor = SystemColors.Control;
             btndanhsach.Image = Properties.Resources.list;
             btndanhsach.ImageAlign = ContentAlignment.MiddleLeft;
-            btndanhsach.Location = new Point(535, 494);
+            btndanhsach.Location = new Point(540, 483);
             btndanhsach.Name = "btndanhsach";
             btndanhsach.Size = new Size(109, 32);
             btndanhsach.TabIndex = 44;
@@ -104,7 +104,7 @@
             btnboqua.ForeColor = SystemColors.Control;
             btnboqua.Image = Properties.Resources.skip;
             btnboqua.ImageAlign = ContentAlignment.MiddleLeft;
-            btnboqua.Location = new Point(415, 494);
+            btnboqua.Location = new Point(420, 483);
             btnboqua.Name = "btnboqua";
             btnboqua.Size = new Size(84, 32);
             btnboqua.TabIndex = 43;
@@ -121,7 +121,7 @@
             btnluu.ForeColor = SystemColors.Control;
             btnluu.Image = Properties.Resources.save;
             btnluu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnluu.Location = new Point(320, 494);
+            btnluu.Location = new Point(325, 483);
             btnluu.Name = "btnluu";
             btnluu.Size = new Size(59, 32);
             btnluu.TabIndex = 42;
@@ -137,7 +137,7 @@
             btnsua.Font = new Font("Montserrat Medium", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnsua.ForeColor = SystemColors.Control;
             btnsua.Image = Properties.Resources.edit;
-            btnsua.Location = new Point(225, 494);
+            btnsua.Location = new Point(230, 483);
             btnsua.Name = "btnsua";
             btnsua.Size = new Size(59, 32);
             btnsua.TabIndex = 41;
@@ -153,7 +153,7 @@
             btnxoa.Font = new Font("Montserrat Medium", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnxoa.ForeColor = SystemColors.Control;
             btnxoa.Image = Properties.Resources.delete;
-            btnxoa.Location = new Point(131, 494);
+            btnxoa.Location = new Point(136, 483);
             btnxoa.Name = "btnxoa";
             btnxoa.Size = new Size(58, 32);
             btnxoa.TabIndex = 40;
@@ -169,7 +169,7 @@
             btnthem.Font = new Font("Montserrat Medium", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnthem.ForeColor = SystemColors.Control;
             btnthem.Image = Properties.Resources.add1;
-            btnthem.Location = new Point(20, 494);
+            btnthem.Location = new Point(25, 483);
             btnthem.Name = "btnthem";
             btnthem.Size = new Size(75, 32);
             btnthem.TabIndex = 39;
@@ -186,7 +186,7 @@
             btntimkiem.ForeColor = SystemColors.Control;
             btntimkiem.Image = Properties.Resources.search2;
             btntimkiem.ImageAlign = ContentAlignment.MiddleLeft;
-            btntimkiem.Location = new Point(462, 444);
+            btntimkiem.Location = new Point(462, 433);
             btntimkiem.Name = "btntimkiem";
             btntimkiem.RightToLeft = RightToLeft.Yes;
             btntimkiem.Size = new Size(112, 34);
@@ -198,7 +198,7 @@
             // txttimkiem
             // 
             txttimkiem.BorderStyle = BorderStyle.FixedSingle;
-            txttimkiem.Location = new Point(249, 448);
+            txttimkiem.Location = new Point(249, 437);
             txttimkiem.Multiline = true;
             txttimkiem.Name = "txttimkiem";
             txttimkiem.Size = new Size(191, 25);
@@ -218,7 +218,7 @@
             dtView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dtView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtView.GridColor = SystemColors.ActiveCaptionText;
-            dtView.Location = new Point(56, 241);
+            dtView.Location = new Point(56, 230);
             dtView.MultiSelect = false;
             dtView.Name = "dtView";
             dtView.ReadOnly = true;
@@ -248,7 +248,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(20, 59);
+            label2.Location = new Point(20, 48);
             label2.Name = "label2";
             label2.Size = new Size(54, 15);
             label2.TabIndex = 46;
@@ -257,7 +257,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(20, 93);
+            label3.Location = new Point(20, 82);
             label3.Name = "label3";
             label3.Size = new Size(55, 15);
             label3.TabIndex = 47;
@@ -266,7 +266,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(20, 127);
+            label4.Location = new Point(20, 116);
             label4.Name = "label4";
             label4.Size = new Size(54, 15);
             label4.TabIndex = 48;
@@ -275,7 +275,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(20, 161);
+            label5.Location = new Point(20, 150);
             label5.Name = "label5";
             label5.Size = new Size(78, 15);
             label5.TabIndex = 49;
@@ -284,7 +284,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(20, 195);
+            label6.Location = new Point(20, 184);
             label6.Name = "label6";
             label6.Size = new Size(71, 15);
             label6.TabIndex = 50;
@@ -293,7 +293,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(363, 50);
+            label7.Location = new Point(363, 39);
             label7.Name = "label7";
             label7.Size = new Size(33, 15);
             label7.TabIndex = 51;
@@ -302,7 +302,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(363, 137);
+            label8.Location = new Point(363, 126);
             label8.Name = "label8";
             label8.Size = new Size(50, 15);
             label8.TabIndex = 52;
@@ -311,7 +311,7 @@
             // txtmahang
             // 
             txtmahang.BorderStyle = BorderStyle.FixedSingle;
-            txtmahang.Location = new Point(106, 55);
+            txtmahang.Location = new Point(106, 44);
             txtmahang.Name = "txtmahang";
             txtmahang.Size = new Size(232, 23);
             txtmahang.TabIndex = 53;
@@ -319,7 +319,7 @@
             // txttenhang
             // 
             txttenhang.BorderStyle = BorderStyle.FixedSingle;
-            txttenhang.Location = new Point(106, 89);
+            txttenhang.Location = new Point(106, 78);
             txttenhang.Name = "txttenhang";
             txttenhang.Size = new Size(232, 23);
             txttenhang.TabIndex = 54;
@@ -327,7 +327,7 @@
             // txtsoluong
             // 
             txtsoluong.BorderStyle = BorderStyle.FixedSingle;
-            txtsoluong.Location = new Point(106, 123);
+            txtsoluong.Location = new Point(106, 112);
             txtsoluong.Name = "txtsoluong";
             txtsoluong.Size = new Size(232, 23);
             txtsoluong.TabIndex = 55;
@@ -335,7 +335,7 @@
             // txtdongianhap
             // 
             txtdongianhap.BorderStyle = BorderStyle.FixedSingle;
-            txtdongianhap.Location = new Point(106, 157);
+            txtdongianhap.Location = new Point(106, 146);
             txtdongianhap.Name = "txtdongianhap";
             txtdongianhap.Size = new Size(232, 23);
             txtdongianhap.TabIndex = 56;
@@ -343,7 +343,7 @@
             // txtdongiaban
             // 
             txtdongiaban.BorderStyle = BorderStyle.FixedSingle;
-            txtdongiaban.Location = new Point(106, 191);
+            txtdongiaban.Location = new Point(106, 180);
             txtdongiaban.Name = "txtdongiaban";
             txtdongiaban.Size = new Size(232, 23);
             txtdongiaban.TabIndex = 57;
@@ -351,7 +351,7 @@
             // txthinh
             // 
             txthinh.BorderStyle = BorderStyle.FixedSingle;
-            txthinh.Location = new Point(363, 72);
+            txthinh.Location = new Point(363, 61);
             txthinh.Multiline = true;
             txthinh.Name = "txthinh";
             txthinh.Size = new Size(172, 57);
@@ -360,7 +360,7 @@
             // txtghichu
             // 
             txtghichu.BorderStyle = BorderStyle.FixedSingle;
-            txtghichu.Location = new Point(363, 158);
+            txtghichu.Location = new Point(363, 147);
             txtghichu.Multiline = true;
             txtghichu.Name = "txtghichu";
             txtghichu.Size = new Size(172, 57);
@@ -370,7 +370,7 @@
             // 
             btnmo.FlatStyle = FlatStyle.Flat;
             btnmo.Image = Properties.Resources.openfile;
-            btnmo.Location = new Point(541, 72);
+            btnmo.Location = new Point(541, 61);
             btnmo.Name = "btnmo";
             btnmo.Size = new Size(77, 34);
             btnmo.TabIndex = 60;
@@ -380,7 +380,7 @@
             // 
             // pichinh
             // 
-            pichinh.Location = new Point(624, 72);
+            pichinh.Location = new Point(624, 61);
             pichinh.Name = "pichinh";
             pichinh.Size = new Size(142, 142);
             pichinh.TabIndex = 61;
@@ -390,7 +390,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 538);
+            ClientSize = new Size(790, 526);
             Controls.Add(pichinh);
             Controls.Add(btnmo);
             Controls.Add(txtghichu);
@@ -418,6 +418,7 @@
             Controls.Add(txttimkiem);
             Controls.Add(dtView);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmHang";
             Text = "FrmHang";
             ((System.ComponentModel.ISupportInitialize)dtView).EndInit();

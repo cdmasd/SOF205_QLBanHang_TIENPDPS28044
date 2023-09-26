@@ -70,6 +70,42 @@ namespace DAL_QLBanHang
             finally { _conn.Close(); }
             return false;
         }
+        public bool UpdateMatKhau(string email, string oldpass, string newpass)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "UpdateMatKhau";
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@oldPass", oldpass);
+                cmd.Parameters.AddWithValue("@newPass", newpass);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+            }
+            catch (Exception ex) { }
+            finally { _conn.Close(); }
+            return false;
+        }
+        public DataTable getNhanVien()
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "DanhSachNV";
+                DataTable dt = new DataTable();
+                dt.Load(cmd.ExecuteReader());
+                return dt;
+            }
+            finally { _conn.Close(); }
+        }
         public DataTable VaiTroNhanVien(string email)
         {
             try
@@ -85,6 +121,30 @@ namespace DAL_QLBanHang
                 return dt;
             }
             finally { _conn.Close(); }
+        }
+        public bool InsertNhanVien(DTO_NhanVien nv)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "InsertDataIntotblNhanVien";
+                cmd.Parameters.AddWithValue("@email",nv.Email);
+                cmd.Parameters.AddWithValue("@tennv",nv.TenNV);
+                cmd.Parameters.AddWithValue("@diachi",nv.DiaChi);
+                cmd.Parameters.AddWithValue("@vaitro",nv.VaiTro);
+                cmd.Parameters.AddWithValue("@tinhtrang",nv.TinhTrang);
+                cmd.Parameters.AddWithValue("@matkhau",nv.MatKhau);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+            }
+            catch (Exception ex) { }
+            finally { _conn.Close(); }
+            return false;
         }
     }
 }

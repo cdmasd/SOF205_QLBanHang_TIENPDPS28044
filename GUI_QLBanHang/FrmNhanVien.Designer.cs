@@ -41,8 +41,8 @@
             txtdiachi = new TextBox();
             rbnhanvien = new RadioButton();
             rbquantri = new RadioButton();
-            rdhoatdong = new RadioButton();
-            rdngung = new RadioButton();
+            rbhoatdong = new RadioButton();
+            rbngung = new RadioButton();
             dtView = new DataGridView();
             txttimkiem = new TextBox();
             btntimkiem = new Button();
@@ -53,14 +53,18 @@
             btnboqua = new Button();
             btndanhsach = new Button();
             btndong = new Button();
+            panel1 = new Panel();
+            panel2 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dtView).BeginInit();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Montserrat Medium", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(329, 9);
+            label1.Location = new Point(329, 5);
             label1.Name = "label1";
             label1.Size = new Size(128, 27);
             label1.TabIndex = 0;
@@ -69,7 +73,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(18, 53);
+            label2.Location = new Point(18, 49);
             label2.Name = "label2";
             label2.Size = new Size(49, 20);
             label2.TabIndex = 1;
@@ -78,7 +82,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(18, 88);
+            label3.Location = new Point(18, 84);
             label3.Name = "label3";
             label3.Size = new Size(115, 20);
             label3.TabIndex = 2;
@@ -87,7 +91,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(18, 123);
+            label4.Location = new Point(18, 119);
             label4.Name = "label4";
             label4.Size = new Size(57, 20);
             label4.TabIndex = 3;
@@ -96,7 +100,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(408, 51);
+            label5.Location = new Point(408, 47);
             label5.Name = "label5";
             label5.Size = new Size(61, 20);
             label5.TabIndex = 4;
@@ -105,7 +109,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(408, 121);
+            label6.Location = new Point(408, 117);
             label6.Name = "label6";
             label6.Size = new Size(87, 20);
             label6.TabIndex = 5;
@@ -115,7 +119,7 @@
             // 
             txtemail.BorderStyle = BorderStyle.FixedSingle;
             txtemail.Cursor = Cursors.IBeam;
-            txtemail.Location = new Point(153, 52);
+            txtemail.Location = new Point(153, 48);
             txtemail.Multiline = true;
             txtemail.Name = "txtemail";
             txtemail.Size = new Size(222, 23);
@@ -125,7 +129,7 @@
             // 
             txttennv.BorderStyle = BorderStyle.FixedSingle;
             txttennv.Cursor = Cursors.IBeam;
-            txttennv.Location = new Point(153, 86);
+            txttennv.Location = new Point(153, 82);
             txttennv.Multiline = true;
             txttennv.Name = "txttennv";
             txttennv.Size = new Size(222, 24);
@@ -135,7 +139,7 @@
             // 
             txtdiachi.BorderStyle = BorderStyle.FixedSingle;
             txtdiachi.Cursor = Cursors.IBeam;
-            txtdiachi.Location = new Point(510, 51);
+            txtdiachi.Location = new Point(510, 47);
             txtdiachi.Multiline = true;
             txtdiachi.Name = "txtdiachi";
             txtdiachi.Size = new Size(262, 57);
@@ -144,7 +148,7 @@
             // rbnhanvien
             // 
             rbnhanvien.AutoSize = true;
-            rbnhanvien.Location = new Point(153, 121);
+            rbnhanvien.Location = new Point(14, 1);
             rbnhanvien.Name = "rbnhanvien";
             rbnhanvien.Size = new Size(101, 24);
             rbnhanvien.TabIndex = 9;
@@ -155,7 +159,7 @@
             // rbquantri
             // 
             rbquantri.AutoSize = true;
-            rbquantri.Location = new Point(287, 121);
+            rbquantri.Location = new Point(150, 1);
             rbquantri.Name = "rbquantri";
             rbquantri.Size = new Size(86, 24);
             rbquantri.TabIndex = 10;
@@ -163,27 +167,27 @@
             rbquantri.Text = "Quản trị";
             rbquantri.UseVisualStyleBackColor = true;
             // 
-            // rdhoatdong
+            // rbhoatdong
             // 
-            rdhoatdong.AutoSize = true;
-            rdhoatdong.Location = new Point(510, 119);
-            rdhoatdong.Name = "rdhoatdong";
-            rdhoatdong.Size = new Size(104, 24);
-            rdhoatdong.TabIndex = 11;
-            rdhoatdong.TabStop = true;
-            rdhoatdong.Text = "Hoạt động";
-            rdhoatdong.UseVisualStyleBackColor = true;
+            rbhoatdong.AutoSize = true;
+            rbhoatdong.Location = new Point(4, 1);
+            rbhoatdong.Name = "rbhoatdong";
+            rbhoatdong.Size = new Size(104, 24);
+            rbhoatdong.TabIndex = 11;
+            rbhoatdong.TabStop = true;
+            rbhoatdong.Text = "Hoạt động";
+            rbhoatdong.UseVisualStyleBackColor = true;
             // 
-            // rdngung
+            // rbngung
             // 
-            rdngung.AutoSize = true;
-            rdngung.Location = new Point(614, 119);
-            rdngung.Name = "rdngung";
-            rdngung.Size = new Size(158, 24);
-            rdngung.TabIndex = 12;
-            rdngung.TabStop = true;
-            rdngung.Text = "Ngưng hoạt động";
-            rdngung.UseVisualStyleBackColor = true;
+            rbngung.AutoSize = true;
+            rbngung.Location = new Point(114, 1);
+            rbngung.Name = "rbngung";
+            rbngung.Size = new Size(158, 24);
+            rbngung.TabIndex = 12;
+            rbngung.TabStop = true;
+            rbngung.Text = "Ngưng hoạt động";
+            rbngung.UseVisualStyleBackColor = true;
             // 
             // dtView
             // 
@@ -199,7 +203,7 @@
             dtView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dtView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtView.GridColor = SystemColors.ActiveCaptionText;
-            dtView.Location = new Point(48, 160);
+            dtView.Location = new Point(48, 156);
             dtView.MultiSelect = false;
             dtView.Name = "dtView";
             dtView.ReadOnly = true;
@@ -219,7 +223,7 @@
             // txttimkiem
             // 
             txttimkiem.BorderStyle = BorderStyle.FixedSingle;
-            txttimkiem.Location = new Point(241, 444);
+            txttimkiem.Location = new Point(241, 440);
             txttimkiem.Multiline = true;
             txttimkiem.Name = "txttimkiem";
             txttimkiem.Size = new Size(191, 25);
@@ -234,7 +238,7 @@
             btntimkiem.ForeColor = SystemColors.Control;
             btntimkiem.Image = Properties.Resources.search2;
             btntimkiem.ImageAlign = ContentAlignment.MiddleLeft;
-            btntimkiem.Location = new Point(454, 440);
+            btntimkiem.Location = new Point(454, 436);
             btntimkiem.Name = "btntimkiem";
             btntimkiem.RightToLeft = RightToLeft.Yes;
             btntimkiem.Size = new Size(112, 34);
@@ -252,13 +256,14 @@
             btnthem.ForeColor = SystemColors.Control;
             btnthem.Image = Properties.Resources.add1;
             btnthem.ImageAlign = ContentAlignment.MiddleLeft;
-            btnthem.Location = new Point(12, 490);
+            btnthem.Location = new Point(28, 486);
             btnthem.Name = "btnthem";
             btnthem.Size = new Size(75, 32);
             btnthem.TabIndex = 16;
             btnthem.Text = "Thêm";
             btnthem.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnthem.UseVisualStyleBackColor = false;
+            btnthem.Click += btnthem_Click;
             // 
             // btnxoa
             // 
@@ -269,7 +274,7 @@
             btnxoa.ForeColor = SystemColors.Control;
             btnxoa.Image = Properties.Resources.delete;
             btnxoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btnxoa.Location = new Point(123, 490);
+            btnxoa.Location = new Point(139, 486);
             btnxoa.Name = "btnxoa";
             btnxoa.Size = new Size(58, 32);
             btnxoa.TabIndex = 17;
@@ -286,7 +291,7 @@
             btnsua.ForeColor = SystemColors.Control;
             btnsua.Image = Properties.Resources.edit;
             btnsua.ImageAlign = ContentAlignment.MiddleLeft;
-            btnsua.Location = new Point(217, 490);
+            btnsua.Location = new Point(233, 486);
             btnsua.Name = "btnsua";
             btnsua.Size = new Size(59, 32);
             btnsua.TabIndex = 18;
@@ -303,13 +308,14 @@
             btnluu.ForeColor = SystemColors.Control;
             btnluu.Image = Properties.Resources.save;
             btnluu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnluu.Location = new Point(312, 490);
+            btnluu.Location = new Point(328, 486);
             btnluu.Name = "btnluu";
             btnluu.Size = new Size(59, 32);
             btnluu.TabIndex = 19;
             btnluu.Text = "Lưu";
             btnluu.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnluu.UseVisualStyleBackColor = false;
+            btnluu.Click += btnluu_Click;
             // 
             // btnboqua
             // 
@@ -320,7 +326,7 @@
             btnboqua.ForeColor = SystemColors.Control;
             btnboqua.Image = Properties.Resources.skip;
             btnboqua.ImageAlign = ContentAlignment.MiddleLeft;
-            btnboqua.Location = new Point(407, 490);
+            btnboqua.Location = new Point(423, 486);
             btnboqua.Name = "btnboqua";
             btnboqua.Size = new Size(84, 32);
             btnboqua.TabIndex = 20;
@@ -337,7 +343,7 @@
             btndanhsach.ForeColor = SystemColors.Control;
             btndanhsach.Image = Properties.Resources.list;
             btndanhsach.ImageAlign = ContentAlignment.MiddleLeft;
-            btndanhsach.Location = new Point(527, 490);
+            btndanhsach.Location = new Point(543, 486);
             btndanhsach.Name = "btndanhsach";
             btndanhsach.Size = new Size(109, 32);
             btndanhsach.TabIndex = 21;
@@ -354,20 +360,39 @@
             btndong.ForeColor = SystemColors.Control;
             btndong.Image = Properties.Resources.off;
             btndong.ImageAlign = ContentAlignment.MiddleLeft;
-            btndong.Location = new Point(672, 490);
+            btndong.Location = new Point(688, 486);
             btndong.Name = "btndong";
             btndong.Size = new Size(73, 32);
             btndong.TabIndex = 22;
             btndong.Text = "Đóng";
             btndong.TextImageRelation = TextImageRelation.ImageBeforeText;
             btndong.UseVisualStyleBackColor = false;
+            btndong.Click += btndong_Click;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(rbhoatdong);
+            panel1.Controls.Add(rbngung);
+            panel1.Location = new Point(506, 114);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(262, 27);
+            panel1.TabIndex = 23;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(rbnhanvien);
+            panel2.Controls.Add(rbquantri);
+            panel2.Location = new Point(139, 116);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(248, 27);
+            panel2.TabIndex = 24;
             // 
             // FrmNhanVien
             // 
             AutoScaleDimensions = new SizeF(9F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(788, 533);
+            ClientSize = new Size(790, 526);
             Controls.Add(btndong);
             Controls.Add(btndanhsach);
             Controls.Add(btnboqua);
@@ -378,10 +403,6 @@
             Controls.Add(btntimkiem);
             Controls.Add(txttimkiem);
             Controls.Add(dtView);
-            Controls.Add(rdngung);
-            Controls.Add(rdhoatdong);
-            Controls.Add(rbquantri);
-            Controls.Add(rbnhanvien);
             Controls.Add(txtdiachi);
             Controls.Add(txttennv);
             Controls.Add(txtemail);
@@ -391,7 +412,10 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(panel1);
+            Controls.Add(panel2);
             Font = new Font("Montserrat Medium", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
@@ -401,6 +425,10 @@
             Text = "FrmNhanVien";
             Load += FrmNhanVien_Load;
             ((System.ComponentModel.ISupportInitialize)dtView).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -418,8 +446,8 @@
         private TextBox txtdiachi;
         private RadioButton rbnhanvien;
         private RadioButton rbquantri;
-        private RadioButton rdhoatdong;
-        private RadioButton rdngung;
+        private RadioButton rbhoatdong;
+        private RadioButton rbngung;
         private DataGridView dtView;
         private TextBox txttimkiem;
         private Button btntimkiem;
@@ -430,5 +458,7 @@
         private Button btnboqua;
         private Button btndanhsach;
         private Button btndong;
+        private Panel panel1;
+        private Panel panel2;
     }
 }

@@ -32,7 +32,18 @@ namespace BUS_BanHang
         {
             return dalNhanVien.VaiTroNhanVien(email);
         }
-
+        public bool UpdateMatKhau(string email, string matkhaucu, string matkhaumoi)
+        {
+            return dalNhanVien.UpdateMatKhau(email, encrytion(matkhaucu), encrytion(matkhaumoi));
+        }
+        public bool InsertNhanVien(DTO_NhanVien nv)
+        {
+            return dalNhanVien.InsertNhanVien(nv);
+        }
+        public DataTable getNhanVien()
+        {
+            return dalNhanVien.getNhanVien();
+        }
         // Mã hoá mật khẩu
         public string encrytion(string password)
         {
@@ -49,7 +60,7 @@ namespace BUS_BanHang
         }
 
         // Send mail
-        public string SendMail(string email, string matkhau)
+        public string SendMail(string email, string matkhau, string action)
         {
             try
             {
@@ -63,7 +74,7 @@ namespace BUS_BanHang
                 Msg.To.Add(email);
 
                 // Đặt tiêu đề của email.
-                Msg.Subject = "Recovery Password";
+                Msg.Subject = action;
 
                 // Đặt nội dung (body) của email và chèn mật khẩu mới vào nội dung email.
                 Msg.Body = $"Mật khẩu mới của bạn là : {matkhau}.";
