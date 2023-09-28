@@ -91,7 +91,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(18, 119);
+            label4.Location = new Point(21, 119);
             label4.Name = "label4";
             label4.Size = new Size(57, 20);
             label4.TabIndex = 3;
@@ -109,7 +109,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(408, 117);
+            label6.Location = new Point(411, 117);
             label6.Name = "label6";
             label6.Size = new Size(87, 20);
             label6.TabIndex = 5;
@@ -219,6 +219,7 @@
             dtView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dtView.Size = new Size(676, 265);
             dtView.TabIndex = 13;
+            dtView.Click += dtView_Click;
             // 
             // txttimkiem
             // 
@@ -246,6 +247,7 @@
             btntimkiem.Text = "Tìm kiếm";
             btntimkiem.TextImageRelation = TextImageRelation.TextBeforeImage;
             btntimkiem.UseVisualStyleBackColor = false;
+            btntimkiem.Click += btntimkiem_Click;
             // 
             // btnthem
             // 
@@ -281,6 +283,7 @@
             btnxoa.Text = "Xoá";
             btnxoa.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnxoa.UseVisualStyleBackColor = false;
+            btnxoa.Click += btnxoa_Click;
             // 
             // btnsua
             // 
@@ -298,6 +301,7 @@
             btnsua.Text = "Sửa";
             btnsua.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnsua.UseVisualStyleBackColor = false;
+            btnsua.Click += btnsua_Click;
             // 
             // btnluu
             // 
@@ -333,6 +337,7 @@
             btnboqua.Text = "Bỏ qua";
             btnboqua.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnboqua.UseVisualStyleBackColor = false;
+            btnboqua.Click += btnboqua_Click;
             // 
             // btndanhsach
             // 
@@ -350,6 +355,7 @@
             btndanhsach.Text = "Danh sách";
             btndanhsach.TextImageRelation = TextImageRelation.ImageBeforeText;
             btndanhsach.UseVisualStyleBackColor = false;
+            btndanhsach.Click += btndanhsach_Click;
             // 
             // btndong
             // 
@@ -373,16 +379,16 @@
             // 
             panel1.Controls.Add(rbhoatdong);
             panel1.Controls.Add(rbngung);
-            panel1.Location = new Point(506, 114);
+            panel1.Location = new Point(508, 114);
             panel1.Name = "panel1";
-            panel1.Size = new Size(262, 27);
+            panel1.Size = new Size(270, 27);
             panel1.TabIndex = 23;
             // 
             // panel2
             // 
             panel2.Controls.Add(rbnhanvien);
             panel2.Controls.Add(rbquantri);
-            panel2.Location = new Point(139, 116);
+            panel2.Location = new Point(142, 116);
             panel2.Name = "panel2";
             panel2.Size = new Size(248, 27);
             panel2.TabIndex = 24;

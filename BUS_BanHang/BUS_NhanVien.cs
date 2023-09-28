@@ -16,34 +16,66 @@ namespace BUS_BanHang
     public class BUS_NhanVien
     {
         DAL_NhanVien dalNhanVien = new DAL_NhanVien();
+        // Kiểm tra thông tin đăng nhập
         public bool NhanVienDangNhap(string email, string password)
         {
             return dalNhanVien.NhanVienDangNhap(email, password);
         }
+
+        // Kiểm tra email đã tồn tại
         public bool NhanVienQuenMatKhau(string email)
         {
             return dalNhanVien.NhanVienQuenMatKhau(email);
         }
+
+        // Cập nhật mật khẩu khi quên 
         public bool TaoMatKhau(string email, string newpass)
         {
             return dalNhanVien.TaoMatKhau(email, encrytion(newpass));
         }
+
+        // Truy xuất vai trò của nhân viên
         public DataTable VaiTroNhanVien(string email)
         {
             return dalNhanVien.VaiTroNhanVien(email);
         }
+
+        // Cập nhật mật khẩu mới
         public bool UpdateMatKhau(string email, string matkhaucu, string matkhaumoi)
         {
             return dalNhanVien.UpdateMatKhau(email, encrytion(matkhaucu), encrytion(matkhaumoi));
         }
+
+        // Thêm nhân viên
         public bool InsertNhanVien(DTO_NhanVien nv)
         {
             return dalNhanVien.InsertNhanVien(nv);
         }
+
+        // Cập nhật thông tin nhân viên
+        public bool UpdateNhanVien(DTO_NhanVien nv)
+        {
+            return dalNhanVien.UpdateNhanVien(nv);
+        }
+
+        // Xoá nhân viên
+        public bool DeleteNhanVien(string email)
+        {
+            return dalNhanVien.DeleteNhanVien(email);
+        }
+
+        // Tìm kiếm nhân viên
+        public DataTable SearchNhanVien(string tennv)
+        {
+            return dalNhanVien.SearchNhanVien(tennv);
+        }
+
+        // Truy xuất nhân viên
         public DataTable getNhanVien()
         {
             return dalNhanVien.getNhanVien();
         }
+
         // Mã hoá mật khẩu
         public string encrytion(string password)
         {
@@ -103,6 +135,7 @@ namespace BUS_BanHang
             }
         }
 
+        // Tạo chuỗi ngẫu nhiên
         public string RandomString()
         {
             var pass = new Password(8); // khởi tạo mật khẩu gồm 8 kí tự
