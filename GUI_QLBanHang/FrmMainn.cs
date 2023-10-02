@@ -187,5 +187,22 @@ namespace GUI_QLBanHang
                 đăngNhậpToolStripMenuItem.Visible = true;
             }
         }
+
+        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmKhach"))
+            {
+                FrmKhach kh = new FrmKhach();
+                kh.TopLevel = false;
+                kh.MdiParent = this;
+                Container.Controls.Add(kh);
+                kh.Location = new Point(Container.Width / 2 - kh.Width / 2, Container.Height / 2 - kh.Height / 2);
+                kh.Show();
+            }
+            else
+            {
+                ActiveChildForm("FrmNhanVien");
+            }
+        }
     }
 }

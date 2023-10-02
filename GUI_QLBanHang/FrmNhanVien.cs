@@ -290,7 +290,7 @@ namespace GUI_QLBanHang
             }
             else
             {
-                dtView.DataSource = bus_NhanVien.SearchNhanVien(tennv);
+                dtView.DataSource = search;
             }
             ResetValues();
         }

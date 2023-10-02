@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\bin\Release\net6.0\DAL_QLBanHang.deps.json
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\bin\Release\net6.0\DAL_QLBanHang.dll
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\bin\Release\net6.0\DAL_QLBanHang.pdb
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\bin\Release\net6.0\DTO_QLBanHang.dll
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\bin\Release\net6.0\DTO_QLBanHang.pdb
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\obj\Release\net6.0\DAL_QLBanHang.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\obj\Release\net6.0\DAL_QLBanHang.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\obj\Release\net6.0\DAL_QLBanHang.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\obj\Release\net6.0\DAL_QLBanHang.AssemblyInfo.cs
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\obj\Release\net6.0\DAL_QLBanHang.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\obj\Release\net6.0\DAL_QLBanHang.csproj.CopyComplete
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\obj\Release\net6.0\DAL_QLBanHang.dll
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\obj\Release\net6.0\refint\DAL_QLBanHang.dll
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\obj\Release\net6.0\DAL_QLBanHang.pdb
+C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\DAL_QLBanHang\obj\Release\net6.0\ref\DAL_QLBanHang.dll
