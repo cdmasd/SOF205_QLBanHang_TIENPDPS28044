@@ -77,6 +77,7 @@
             btndong.Text = "Đóng";
             btndong.TextImageRelation = TextImageRelation.ImageBeforeText;
             btndong.UseVisualStyleBackColor = false;
+            btndong.Click += btndong_Click;
             // 
             // btndanhsach
             // 
@@ -94,6 +95,7 @@
             btndanhsach.Text = "Danh sách";
             btndanhsach.TextImageRelation = TextImageRelation.ImageBeforeText;
             btndanhsach.UseVisualStyleBackColor = false;
+            btndanhsach.Click += FrmHang_Load;
             // 
             // btnboqua
             // 
@@ -111,6 +113,7 @@
             btnboqua.Text = "Bỏ qua";
             btnboqua.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnboqua.UseVisualStyleBackColor = false;
+            btnboqua.Click += FrmHang_Load;
             // 
             // btnluu
             // 
@@ -128,6 +131,7 @@
             btnluu.Text = "Lưu";
             btnluu.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnluu.UseVisualStyleBackColor = false;
+            btnluu.Click += btnluu_Click;
             // 
             // btnsua
             // 
@@ -144,6 +148,7 @@
             btnsua.Text = "Sửa";
             btnsua.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnsua.UseVisualStyleBackColor = false;
+            btnsua.Click += btnsua_Click;
             // 
             // btnxoa
             // 
@@ -160,6 +165,7 @@
             btnxoa.Text = "Xoá";
             btnxoa.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnxoa.UseVisualStyleBackColor = false;
+            btnxoa.Click += btnxoa_Click;
             // 
             // btnthem
             // 
@@ -176,6 +182,7 @@
             btnthem.Text = "Thêm";
             btnthem.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnthem.UseVisualStyleBackColor = false;
+            btnthem.Click += btnthem_Click;
             // 
             // btntimkiem
             // 
@@ -194,6 +201,7 @@
             btntimkiem.Text = "Tìm kiếm";
             btntimkiem.TextImageRelation = TextImageRelation.TextBeforeImage;
             btntimkiem.UseVisualStyleBackColor = false;
+            btntimkiem.Click += btntimkiem_Click;
             // 
             // txttimkiem
             // 
@@ -218,7 +226,7 @@
             dtView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dtView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtView.GridColor = SystemColors.ActiveCaptionText;
-            dtView.Location = new Point(56, 230);
+            dtView.Location = new Point(20, 230);
             dtView.MultiSelect = false;
             dtView.Name = "dtView";
             dtView.ReadOnly = true;
@@ -232,8 +240,9 @@
             dtView.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dtView.RowTemplate.Height = 25;
             dtView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dtView.Size = new Size(676, 188);
+            dtView.Size = new Size(746, 188);
             dtView.TabIndex = 36;
+            dtView.Click += dtView_Click;
             // 
             // label1
             // 
@@ -293,7 +302,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(363, 39);
+            label7.Location = new Point(354, 39);
             label7.Name = "label7";
             label7.Size = new Size(33, 15);
             label7.TabIndex = 51;
@@ -302,7 +311,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(363, 126);
+            label8.Location = new Point(354, 127);
             label8.Name = "label8";
             label8.Size = new Size(50, 15);
             label8.TabIndex = 52;
@@ -351,7 +360,7 @@
             // txthinh
             // 
             txthinh.BorderStyle = BorderStyle.FixedSingle;
-            txthinh.Location = new Point(363, 61);
+            txthinh.Location = new Point(354, 61);
             txthinh.Multiline = true;
             txthinh.Name = "txthinh";
             txthinh.Size = new Size(172, 57);
@@ -360,7 +369,7 @@
             // txtghichu
             // 
             txtghichu.BorderStyle = BorderStyle.FixedSingle;
-            txtghichu.Location = new Point(363, 147);
+            txtghichu.Location = new Point(354, 148);
             txtghichu.Multiline = true;
             txtghichu.Name = "txtghichu";
             txtghichu.Size = new Size(172, 57);
@@ -377,12 +386,14 @@
             btnmo.Text = "Mở hình";
             btnmo.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnmo.UseVisualStyleBackColor = true;
+            btnmo.Click += btnmo_Click;
             // 
             // pichinh
             // 
             pichinh.Location = new Point(624, 61);
             pichinh.Name = "pichinh";
             pichinh.Size = new Size(142, 142);
+            pichinh.SizeMode = PictureBoxSizeMode.StretchImage;
             pichinh.TabIndex = 61;
             pichinh.TabStop = false;
             // 
@@ -421,6 +432,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmHang";
             Text = "FrmHang";
+            Load += FrmHang_Load;
             ((System.ComponentModel.ISupportInitialize)dtView).EndInit();
             ((System.ComponentModel.ISupportInitialize)pichinh).EndInit();
             ResumeLayout(false);
