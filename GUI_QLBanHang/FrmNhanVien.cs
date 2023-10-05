@@ -145,11 +145,10 @@ namespace GUI_QLBanHang
             DTO_NhanVien nv = new DTO_NhanVien(txtemail.Text.Trim(), txttennv.Text.Trim(), txtdiachi.Text.Trim(), role, tinhtrang, bus_NhanVien.encrytion(Rpass));
             if (bus_NhanVien.InsertNhanVien(nv))
             {
-                MessageBox.Show("Thêm thành công");
-                ResetValues();
-                LoadGridView();
                 // Send mật khẩu được tạo ngẫu nhiên tới email
                 MessageBox.Show(bus_NhanVien.SendMail(txtemail.Text.Trim(), Rpass, "Tạo tài khoản thành công"));
+                ResetValues();
+                LoadGridView();
             }
             else
             {

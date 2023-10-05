@@ -6,7 +6,6 @@ C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\bin\Debug\net6.0-w
 C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\obj\Debug\net6.0-windows\GUI_QLBanHang.csproj.AssemblyReference.cache
 C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\obj\Debug\net6.0-windows\GUI_QLBanHang.FrmDangNhap.resources
 C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\obj\Debug\net6.0-windows\GUI_QLBanHang.FrmHang.resources
-C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\obj\Debug\net6.0-windows\GUI_QLBanHang.FrmHoaDon.resources
 C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\obj\Debug\net6.0-windows\GUI_QLBanHang.FrmKhach.resources
 C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\obj\Debug\net6.0-windows\GUI_QLBanHang.FrmNhanVien.resources
 C:\Users\Admin\Desktop\SOF205\QLBanHang_PS28044\GUI_QLBanHang\obj\Debug\net6.0-windows\GUI_QLBanHang.FrmThongKe.resources

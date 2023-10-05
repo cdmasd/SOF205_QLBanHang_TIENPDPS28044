@@ -201,7 +201,24 @@ namespace GUI_QLBanHang
             }
             else
             {
-                ActiveChildForm("FrmNhanVien");
+                ActiveChildForm("FrmKhach");
+            }
+        }
+
+        private void ThốngKêSPTồnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmThongKe"))
+            {
+                FrmThongKe tk = new FrmThongKe();
+                tk.TopLevel = false;
+                tk.MdiParent = this;
+                Container.Controls.Add(tk);
+                tk.Location = new Point(Container.Width / 2 - tk.Width / 2, Container.Height / 2 - tk.Height / 2);
+                tk.Show();
+            }
+            else
+            {
+                ActiveChildForm("FrmThongKe");
             }
         }
     }

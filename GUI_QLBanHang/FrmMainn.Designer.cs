@@ -113,7 +113,7 @@
             // 
             sảnPhẩmToolStripMenuItem.Image = Properties.Resources.features;
             sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
-            sảnPhẩmToolStripMenuItem.Size = new Size(180, 22);
+            sảnPhẩmToolStripMenuItem.Size = new Size(139, 22);
             sảnPhẩmToolStripMenuItem.Text = "Sản Phẩm";
             sảnPhẩmToolStripMenuItem.Click += sảnPhẩmToolStripMenuItem_Click;
             // 
@@ -121,7 +121,7 @@
             // 
             nhânViênToolStripMenuItem.Image = Properties.Resources.employee;
             nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            nhânViênToolStripMenuItem.Size = new Size(180, 22);
+            nhânViênToolStripMenuItem.Size = new Size(139, 22);
             nhânViênToolStripMenuItem.Text = "Nhân Viên";
             nhânViênToolStripMenuItem.Click += nhânViênToolStripMenuItem_Click_1;
             // 
@@ -129,7 +129,7 @@
             // 
             kháchHàngToolStripMenuItem.Image = Properties.Resources.costumer;
             kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            kháchHàngToolStripMenuItem.Size = new Size(180, 22);
+            kháchHàngToolStripMenuItem.Size = new Size(139, 22);
             kháchHàngToolStripMenuItem.Text = "Khách Hàng";
             kháchHàngToolStripMenuItem.Click += kháchHàngToolStripMenuItem_Click;
             // 
@@ -146,6 +146,7 @@
             ThốngKêSPTồnToolStripMenuItem.Name = "ThốngKêSPTồnToolStripMenuItem";
             ThốngKêSPTồnToolStripMenuItem.Size = new Size(180, 22);
             ThốngKêSPTồnToolStripMenuItem.Text = "Thống Kê Sản Phẩm";
+            ThốngKêSPTồnToolStripMenuItem.Click += ThốngKêSPTồnToolStripMenuItem_Click;
             // 
             // hướngDẫnToolStripMenuItem
             // 

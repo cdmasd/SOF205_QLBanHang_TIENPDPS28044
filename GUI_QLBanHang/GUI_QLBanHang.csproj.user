@@ -7,9 +7,6 @@
     <Compile Update="FrmHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="FrmKhach.cs">
       <SubType>Form</SubType>
     </Compile>
