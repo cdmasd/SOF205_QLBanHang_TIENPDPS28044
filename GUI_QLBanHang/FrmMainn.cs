@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -220,6 +221,18 @@ namespace GUI_QLBanHang
             {
                 ActiveChildForm("FrmThongKe");
             }
+        }
+
+        private void hướngDẫnSửDụngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đang xây dựng");
+            return;
+        }
+
+        private void giớiThiệuPhầnMềmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đang xây dựng");
+            return;
         }
     }
 }

@@ -161,6 +161,7 @@
             hướngDẫnSửDụngToolStripMenuItem.Name = "hướngDẫnSửDụngToolStripMenuItem";
             hướngDẫnSửDụngToolStripMenuItem.Size = new Size(188, 22);
             hướngDẫnSửDụngToolStripMenuItem.Text = "Hướng Dẫn Sử Dụng";
+            hướngDẫnSửDụngToolStripMenuItem.Click += hướngDẫnSửDụngToolStripMenuItem_Click;
             // 
             // giớiThiệuPhầnMềmToolStripMenuItem
             // 
@@ -168,6 +169,7 @@
             giớiThiệuPhầnMềmToolStripMenuItem.Name = "giớiThiệuPhầnMềmToolStripMenuItem";
             giớiThiệuPhầnMềmToolStripMenuItem.Size = new Size(188, 22);
             giớiThiệuPhầnMềmToolStripMenuItem.Text = "Giới Thiệu Phần Mềm";
+            giớiThiệuPhầnMềmToolStripMenuItem.Click += giớiThiệuPhầnMềmToolStripMenuItem_Click;
             // 
             // thôngTinNvToolStripMenuItem
             // 
