@@ -16,6 +16,11 @@ namespace DTO_QLBanHang
         string hinhanh;
         string ghichu;
         string email;
+
+        public DTO_Hang()
+        {
+        }
+
         public int Mahang
         {
             get { return mahang; }
