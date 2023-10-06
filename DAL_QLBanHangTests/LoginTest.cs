@@ -16,7 +16,7 @@ namespace DAL_QLBanHang.Tests
         public void LG01() // Case email rỗng | có 2 tham số email và password
         {
             DAL_NhanVien login = new DAL_NhanVien();
-            string email = string.Empty;
+            string email = null;
             string password = "abc";
             bool result = login.NhanVienDangNhap(email,password);
             Assert.IsFalse(result);
@@ -27,7 +27,7 @@ namespace DAL_QLBanHang.Tests
         {
             DAL_NhanVien login = new DAL_NhanVien();
             string email = "tienphan00116@gmail.com";
-            string password = string.Empty;
+            string password = null;
             bool result = login.NhanVienDangNhap(email, password);
             Assert.IsFalse(result);
         }
@@ -56,7 +56,7 @@ namespace DAL_QLBanHang.Tests
         public void LG06() // Case lấy lại mật khẩu không nhập email | có 2 tham số email và password tạo tự động
         {
             DAL_NhanVien login = new DAL_NhanVien();
-            string email = string.Empty;
+            string email = null;
             string Newpassword = "Mật khẩu ngẫu nhiên";
             bool result = login.TaoMatKhau(email, Newpassword);
             Assert.IsFalse(result);
